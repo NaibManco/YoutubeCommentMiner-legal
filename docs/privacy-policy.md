@@ -4,7 +4,7 @@ permalink: /privacy-policy/
 
 # Privacy Policy（MVP）— YouTube Comment Miner
 
-Last updated: 2026-05-04
+Last updated: 2026-10-09
 
 ## Summary
 YouTube Comment Miner is a Chrome extension that helps users analyze YouTube comments and export results. The MVP version processes data locally and does not upload comment content to any server.
@@ -17,12 +17,12 @@ YouTube Comment Miner is a Chrome extension that helps users analyze YouTube com
 ## Data We Store (Local Only)
 Stored via Chrome `chrome.storage.local`:
 - User-provided YouTube Data API key (BYOK mode)
-- UI settings (e.g., selected ruleset, demo mode)
+- UI settings (e.g., selected ruleset)
 - Local cache of fetched results (keyed by credential mode, videoId, ruleset, maxPages and pageSize; TTL 24h)
 
 ## Demo Mode
 - Built-in local demo data is bundled with the extension and does not call the YouTube API.
-- If public-key demo mode is enabled by the maintainer, requests go directly from your browser to Google's YouTube Data API and are subject to demo limits.
+- If you have not added your own API key, the extension uses a shared demo key. Requests still go directly from your browser to Google's YouTube Data API and are subject to demo limits.
 - Users can add their own YouTube Data API key to fetch real comments without demo limits.
 
 ## Data We Do NOT Collect / Share
@@ -33,7 +33,7 @@ Stored via Chrome `chrome.storage.local`:
 ## Data Retention & Deletion
 - Cached results expire by default after 24 hours.
 - You can clear cached data via the extension UI (Clear Cache).
-- You can remove your saved API key via Options (Clear Key).
+- You can remove your saved API key via Options (Remove key).
 
 ## Security
 - This repo contains only legal/compliance documents.
